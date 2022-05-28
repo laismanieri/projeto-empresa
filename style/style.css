@@ -72,6 +72,33 @@
     color: black;
 }
 
+.titulo-catalogo{
+    font-family: "Graphik",Helvetica,Arial,sans-serif;
+    color: gray;
+    margin: 7% 6% 3% 6%;
+}
+
+.catalogo{
+    display: flex;
+    opacity: 80%;   
+    align-items: center;
+    justify-content: center;
+}
+
+.img-catalogo{
+    position: absolute;
+}
+
+.texto{
+    position: relative;
+    font-size: 22px;
+    font-family: "Practice Display","Times New Roman",Times,serif;
+}
+
+.imagem-catalogo{
+    width: 40%;
+}
+
 
 
 

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     list-style: none;
+    color: gray;
     text-decoration: none;
 }
 
@@ -20,6 +21,11 @@ header p {
 
 }
 
+
+
+
+
+
 .linha {
     width: 100%;
     overflow: hidden;
@@ -34,7 +40,6 @@ header p {
 
 .products {
     text-align: center;
-    margin: 0 6% 3% 6%;
     font-family: "Graphik", Helvetica, Arial, sans-serif;
     letter-spacing: 0.1em;
     line-height: 1.4;
@@ -49,41 +54,50 @@ header p {
     padding: 3% 0 3% 0;
 }
 
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.grid-container, .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: 100px 20px; */
 }
-
+/* 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
+    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+} */
 
 .grid-item img {
     width: 100%;
+    justify-items: center;
 }
 
-.titulo {
-    font-family: "Graphik", Helvetica, Arial, sans-serif;
-    font-size: 14.4px;
-    color: #808080;
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
 }
 
-.item {
-    font-family: "Practice Display", "Times New Roman", Times, serif;
-    letter-spacing: 0.1em;
-    line-height: 1.4;
-    font-size: 16px;
-    color: black;
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    position: relative;
 }
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+.back{
+	transform: rotateY(180deg);
+}
+
 
 .titulo-catalogo {
     font-family: "Graphik", Helvetica, Arial, sans-serif;
     color: gray;
-    margin: 7% 6% 3% 6%;
+    margin: 20% 6% 3% 6%;
 }
 
 .catalogo {
@@ -93,8 +107,7 @@ header p {
     justify-content: center;
 }
 
-.img-catalogo,
-swiffy-slider {
+.img-catalogo{
     position: absolute;
 }
 
@@ -102,6 +115,7 @@ swiffy-slider {
     position: relative;
     font-size: 22px;
     font-family: "Practice Display", "Times New Roman", Times, serif;
+    color: black;
 }
 
 .imagem-catalogo {
@@ -120,8 +134,7 @@ swiffy-slider {
 }
 
 
-input,
-textarea {
+input,textarea {
     width: 30%;
     padding: 5px 0 5px 0;
     margin: 8px 0;

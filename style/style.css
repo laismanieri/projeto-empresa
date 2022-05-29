@@ -1,18 +1,26 @@
-*{
+* {
     margin: 0;
     list-style: none;
     text-decoration: none;
 }
 
-/* inicio parte Alex */
-
-
-
-/* fim parte Alex */
-
 /* inicio parte Lais */
+header p {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    z-index: 1;
+    text-align: center;
+    color: black;
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+    background-color: white;
 
-.linha{
+}
+
+.linha {
     width: 100%;
     overflow: hidden;
     margin: 1.625em 0;
@@ -24,18 +32,18 @@
     cursor: pointer;
 }
 
-.products{
+.products {
     text-align: center;
     margin: 0 6% 3% 6%;
-    font-family: "Graphik",Helvetica,Arial,sans-serif;
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
     letter-spacing: 0.1em;
     line-height: 1.4;
 
 
 }
 
-.products h1{
-    font-family: "Graphik",Helvetica,Arial,sans-serif;
+.products h1 {
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
     font-size: 14.4px;
     color: #808080;
     padding: 3% 0 3% 0;
@@ -48,133 +56,194 @@
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
     font-size: 30px;
     text-align: center;
 }
 
-.grid-item img{
+.grid-item img {
     width: 100%;
 }
 
-.titulo{
-    font-family: "Graphik",Helvetica,Arial,sans-serif;
+.titulo {
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
     font-size: 14.4px;
     color: #808080;
 }
 
-.item{
-    font-family: "Practice Display","Times New Roman",Times,serif;
+.item {
+    font-family: "Practice Display", "Times New Roman", Times, serif;
     letter-spacing: 0.1em;
     line-height: 1.4;
     font-size: 16px;
     color: black;
 }
 
-.titulo-catalogo{
-    font-family: "Graphik",Helvetica,Arial,sans-serif;
+.titulo-catalogo {
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
     color: gray;
     margin: 7% 6% 3% 6%;
 }
 
-.catalogo{
+.catalogo {
     display: flex;
-    opacity: 80%;   
+    opacity: 80%;
     align-items: center;
     justify-content: center;
 }
 
-.img-catalogo{
+.img-catalogo,
+swiffy-slider {
     position: absolute;
 }
 
-.texto{
+.texto {
     position: relative;
     font-size: 22px;
-    font-family: "Practice Display","Times New Roman",Times,serif;
+    font-family: "Practice Display", "Times New Roman", Times, serif;
 }
 
-.imagem-catalogo{
+.imagem-catalogo {
     width: 40%;
 }
 
+/* formulario */
+#formulario {
+    margin: 10% 0 0 0;
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+
+#formulario h1 {
+    font-size: 48px;
+}
 
 
+input,
+textarea {
+    width: 30%;
+    padding: 5px 0 5px 0;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    background-color: lightgrey;
+    color: black;
+}
+
+#enviar {
+    width: 10%;
+    padding: 5px 10px 5px 5px;
+    margin: 8px 0;
+}
 
 /* fim parte Lais */
 
 /* inicio parte Diego */
 
+.video-titulo {
+    margin: 10% 6% 3% 6%;
+    text-align: center;
+    font-family: "Graphik", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    color: gray;
+}
+
 .homepage-brand.video .video-link {
     display: block;
     width: 100%;
     line-height: 0;
-    margin-top: 2.25em;
+    margin-top: 6%;
+
 }
 
-.visible{
-pointer-events: painted;
+.homepage-designers-projects-list {
+    margin-top: 6%;
+}
+
+.visible {
+    pointer-events: painted;
 }
 
 body {
     line-height: 1;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-#velha img{
-    width: 40%;
-}
-#projetovelha img{
-    width: 40%;
-}
-#velho img{
-    width: 40%;
-}
-#projetovelho img{
+
+#velha img {
     width: 40%;
 }
 
-.content-container{
+#projetovelha img {
+    width: 40%;
+}
+
+#velho img {
+    width: 40%;
+}
+
+#projetovelho img {
+    width: 40%;
+}
+
+.content-container {
     display: flex;
 }
+
 footer#bottom {
     margin-top: 11em;
     width: 100%;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
-.social ul{
+.social ul {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.social li{
+.social li {
     width: 100%;
     height: 100%;
     list-style: none;
 
 }
-.logo{
+
+.logo {
     width: 10%;
 }
 
-.container-top{
-        justify-content: center;
-        display: flex;
-        padding: 15px 15px 15px 15px;
-        justify-content: space-evenly;
-        margin-top: 15%;
+.container-top {
+    justify-content: center;
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    justify-content: space-evenly;
+    margin-top: 0;
 }
-#video{
-        /* padding: 0; */
-        margin: -9px;
-        width: 102%;
-    }
+
+#video {
+    /* padding: 0; */
+    margin: -9px;
+    width: 102%;
+}
 
 
 /* fim parte Diego */
